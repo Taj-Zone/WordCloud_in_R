@@ -34,10 +34,10 @@ The text is loaded using Corpus() function from text mining(tm) package. Corpus 
 Start by importing text file created in step 1:
 To import the file saved locally in your computer, type the following R code. You will be asked to choose the text file interactively.
 text = readLines(file.choose())
+
 Load the data as a corpus:
-# VectorSource() function 
-# creates a corpus of 
-# character vectors
+# VectorSource() function creates a corpus of character vectors
+
 docs = Corpus(VectorSource(text))   
 Text transformation:
 Transformation is performed using tm_map() function to replace, for example, special characters from the text like “@”, “#”, “/”.
